@@ -1,0 +1,59 @@
+========== VERIFICACIÓN SERVIDOR LAMP - BARDIN ==========
+=== VERSIONES INSTALADAS ===
+Server version: Apache/2.4.52 (Ubuntu)
+Server built:   2025-08-11T12:10:10
+mysql  Ver 8.0.44-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+PHP 8.1.2-1ubuntu2.22 (cli) (built: Jul 15 2025 12:11:22) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.22, Copyright (c), by Zend Technologies
+
+=== ESTADO DE SERVICIOS ===
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2025-12-01 01:21:03 UTC; 26min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 13769 (apache2)
+      Tasks: 7 (limit: 2309)
+     Memory: 13.1M
+        CPU: 80ms
+     CGroup: /system.slice/apache2.service
+             ├─13769 /usr/sbin/apache2 -k start
+             ├─13773 /usr/sbin/apache2 -k start
+             ├─13774 /usr/sbin/apache2 -k start
+             ├─13776 /usr/sbin/apache2 -k start
+             ├─13777 /usr/sbin/apache2 -k start
+             ├─13779 /usr/sbin/apache2 -k start
+             └─13953 /usr/sbin/apache2 -k start
+
+Dec 01 01:21:03 linux-practice systemd[1]: Starting The Apache HTTP Server...
+Dec 01 01:21:03 linux-practice apachectl[13768]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.2.1. Set the 'ServerName' directive globally to suppress this message
+Dec 01 01:21:03 linux-practice systemd[1]: Started The Apache HTTP Server.
+
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2025-12-01 01:18:06 UTC; 29min ago
+   Main PID: 6181 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 2309)
+     Memory: 364.2M
+        CPU: 5.419s
+     CGroup: /system.slice/mysql.service
+             └─6181 /usr/sbin/mysqld
+
+Dec 01 01:18:06 linux-practice systemd[1]: Starting MySQL Community Server...
+Dec 01 01:18:06 linux-practice systemd[1]: Started MySQL Community Server.
+
+=== PUERTOS EN ESCUCHA ===
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      6181/mysqld         
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      6181/mysqld         
+tcp6       0      0 :::80                   :::*                    LISTEN      13769/apache2       
+
+=== ARCHIVOS WEB CREADOS ===
+total 20
+drwxr-xr-x 2 root root 4096 Dec  1 01:27 .
+drwxr-xr-x 3 root root 4096 Dec  1 01:17 ..
+-rw-r--r-- 1 root root  702 Dec  1 01:27 index.html
+-rw-r--r-- 1 root root   20 Dec  1 01:27 info.php
+-rw-r--r-- 1 root root  511 Dec  1 01:27 test_db.php
+
