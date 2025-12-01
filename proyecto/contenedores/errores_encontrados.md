@@ -31,3 +31,9 @@ me salto un error.
 -AL tener este error, revise los logs de prometheus con el comando: 'docker-compose logs prometheus |
 tail -20' me saltaba un error que decia 'yaml:line 12:could not find expected ":"'.
 -Esto significa que en el archivo 'prometheus.yml' tiene un error de sintaxis en la linea 12.
+
+Arreglando error de prometheus.yml
+-Arregle el error de prometehus que era un error de sintaxis.
+-Error Sintaxis: La linea que era comentario se dividia en dos, entonces la que quedaba como segunda no quedaba comentada.
+-Al arreglar el error de sintaxis, pude entrar a los targets de prometheus, por ende pude hacer funcionar el URL del enunciado para entrar a targets.
+
