@@ -1,0 +1,34 @@
+========== VERIFICACIÓN DE ARCHIVOS - BARDIN ==========
+Estructura de directorios creada:
+/mnt/lvm_storage_Bardin
+/mnt/lvm_storage_Bardin/respaldos
+/mnt/lvm_storage_Bardin/lost+found
+/mnt/lvm_storage_Bardin/temporal
+/mnt/lvm_storage_Bardin/proyectos
+/mnt/lvm_storage_Bardin/proyectos/archivados
+/mnt/lvm_storage_Bardin/proyectos/activos
+Estructura de directorios creada:
+/mnt/lvm_storage_Bardin
+/mnt/lvm_storage_Bardin/respaldos
+/mnt/lvm_storage_Bardin/lost+found
+/mnt/lvm_storage_Bardin/temporal
+/mnt/lvm_storage_Bardin/proyectos
+/mnt/lvm_storage_Bardin/proyectos/archivados
+/mnt/lvm_storage_Bardin/proyectos/activos
+Archivos en cada directorio:
+-rw-r--r-- 1 root root 27 Dec  1 00:07 /mnt/lvm_storage_Bardin/respaldos/documento_10.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:07 /mnt/lvm_storage_Bardin/respaldos/documento_09.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/temporal/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/temporal/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/temporal/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/temporal/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/temporal/documento_02.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/archivados/documento_07.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/archivados/documento_06.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/archivados/documento_08.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/activos/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/activos/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/activos/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/activos/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  1 00:06 /mnt/lvm_storage_Bardin/proyectos/activos/documento_02.txt
+
