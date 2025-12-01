@@ -1,22 +1,33 @@
-# ERRORES ENCONTRADOS Y TESTING - GOMEZ (Alumno C)
+Errores encontrados - Gomez(Alumno C)
 
-## 1. PROBLEMA INICIAL:
-Command 'docker-compose' not found
-**SOLUCIÓN**: sudo apt install -y docker.io docker-compose
+1- El docker compose no estaba instalado
+- Error al ejecutar 'docker-compose up -d': El sistema mostraba 'Command 
+'docker-compose' not found'
+-Ese error de que no funcionaba, lo solucione instalando Docker y
+Docker Compose con el comando : sudo apt install docker.io docker-compose
 
-## 2. docker-compose up -d:
-✅ 6 contenedores creados exitosamente:
-- nginx-practica (8081)
-- redis-practica (6379) 
-- postgres-practica (5432)
-- loki-practica (3100)
-- prometheus-practica (9090) [Restarting - config prometheus.yml]
-- grafana-practica (3000)
+Pruebas con docker-compose
+-Luego de haber solucionado el error anterior, volvi a correr:
+ - 'docker-compose up -d' Funciono
+ -'docker-compose config' Funciono
+ -'docker-compose logs' Funciono
+ -Con estos comandos pude levantar los 6 contenedores.
 
-## 3. Comandos de debug:
-- docker-compose config ✓
-- docker-compose logs ✓
-- docker ps ✓
+Prometheus y los targets.
+-En'docker ps' se ve que el contenedor Prometheus se reinicia seguido.
+- Esto coincide con lo que decia el enunciado sobre los targets: hay
+una configuracion que hace que algunos aparezcan DOWN.
 
-## 4. Observaciones:
-Prometheus restarting por prometheus.yml (nginx no expone métricas 9113)
+Entrando a Grafana desde la VM
+-Ejecute lo que decia el enunciado ' http://localhost:3000' para acceder a grafana.
+-Aparecio un mensaje que decia 'command 'firefox' not found'. Basicamente no lo tengo instalado.
+-Claramente no pude entrar porque no tengo una virtualizacion visual.
+
+Entrando a Grafana desde Windows.
+-Entre a grafana desde mi windows, utilice la ip que aparece al utilizar el comando: hostname -l
+-Utiliza la red local.
+-Entre a grafana desde windows, configure Prometheus pero al ingresar la URL del enunciado,
+me salto un error.
+-AL tener este error, revise los logs de prometheus con el comando: 'docker-compose logs prometheus |
+tail -20' me saltaba un error que decia 'yaml:line 12:could not find expected ":"'.
+-Esto significa que en el archivo 'prometheus.yml' tiene un error de sintaxis en la linea 12.
