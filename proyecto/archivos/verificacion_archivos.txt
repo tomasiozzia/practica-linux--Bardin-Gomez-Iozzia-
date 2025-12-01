@@ -50,3 +50,28 @@ Archivos en cada directorio:
 -rw-rw-r-- 1 vagrant vagrant 27 Dec  1 00:21 /mnt/lvm_storage_gomez/proyectos/activos/documento_02.txt
 -rw-rw-r-- 1 vagrant vagrant 27 Dec  1 00:21 /mnt/lvm_storage_gomez/proyectos/activos/documento_03.txt
 
+========== VERIFICACIÓN DE ARCHIVOS - IOZZIA ==========
+Estructura de directorios creada:
+/mnt/lvm_storage_Iozzia
+/mnt/lvm_storage_Iozzia/temporal
+/mnt/lvm_storage_Iozzia/proyectos
+/mnt/lvm_storage_Iozzia/proyectos/activos
+/mnt/lvm_storage_Iozzia/proyectos/archivados
+/mnt/lvm_storage_Iozzia/respaldos
+Archivos en cada directorio:
+-rw-r--r-- 1 root root 27 Dec  1 03:17 /mnt/lvm_storage_Iozzia/temporal/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:17 /mnt/lvm_storage_Iozzia/temporal/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:17 /mnt/lvm_storage_Iozzia/temporal/documento_02.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:17 /mnt/lvm_storage_Iozzia/temporal/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:17 /mnt/lvm_storage_Iozzia/temporal/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:49 /mnt/lvm_storage_Iozzia/proyectos/activos/documento_04.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:49 /mnt/lvm_storage_Iozzia/proyectos/activos/documento_01.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:49 /mnt/lvm_storage_Iozzia/proyectos/activos/documento_02.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:49 /mnt/lvm_storage_Iozzia/proyectos/activos/documento_05.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:49 /mnt/lvm_storage_Iozzia/proyectos/activos/documento_03.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:27 /mnt/lvm_storage_Iozzia/proyectos/archivados/documento_08.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:27 /mnt/lvm_storage_Iozzia/proyectos/archivados/documento_06.txt
+-rw-r--r-- 1 root root 27 Dec  1 02:27 /mnt/lvm_storage_Iozzia/proyectos/archivados/documento_07.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:10 /mnt/lvm_storage_Iozzia/respaldos/documento_10.txt
+-rw-r--r-- 1 root root 27 Dec  1 03:10 /mnt/lvm_storage_Iozzia/respaldos/documento_09.txt
+
