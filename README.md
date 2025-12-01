@@ -65,3 +65,21 @@ Integrantes: Bardin – Gómez – Iozzia
 - Grafana: `http://IP_VM:3000` (usuario `admin`, contraseña `practica123`)  
 - Prometheus: `http://IP_VM:9090`  
 - Nginx: `http://IP_VM:8081`
+
+- 📝 Conclusiones
+
+Este proyecto nos permitió practicar virtualización, administración Linux, Docker,
+monitoreo de sistemas, y trabajo colaborativo con Git, completando un entorno
+completo de servidor moderno.
+
+-El proyecto nos ayudo a adquirir experiencia en:
+
+-Configuración de entornos reproducibles
+
+-Automatización mediante Vagrant
+
+-Gestión profesional de repositorios
+
+-Debugging real de contenedores
+
+-Monitoreo con herramientas de nivel industria
