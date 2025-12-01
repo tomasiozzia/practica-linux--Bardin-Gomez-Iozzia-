@@ -1,0 +1,86 @@
+networks:
+  monitoring:
+    driver: bridge
+services:
+  grafana:
+    container_name: grafana-practica
+    depends_on:
+      loki:
+        condition: service_started
+      prometheus:
+        condition: service_started
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: practica123
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    image: grafana/grafana:latest
+    networks:
+      monitoring: null
+    ports:
+    - published: 3000
+      target: 3000
+    restart: unless-stopped
+    volumes:
+    - grafana-data:/var/lib/grafana:rw
+  loki:
+    command: -config.file=/etc/loki/local-config.yaml
+    container_name: loki-practica
+    image: grafana/loki:latest
+    networks:
+      monitoring: null
+    ports:
+    - published: 3100
+      target: 3100
+    restart: unless-stopped
+  nginx:
+    container_name: nginx-practica
+    image: nginx:alpine
+    networks:
+      monitoring: null
+    ports:
+    - published: 8081
+      target: 80
+    restart: unless-stopped
+  postgres:
+    container_name: postgres-practica
+    environment:
+      POSTGRES_DB: tp_final
+      POSTGRES_PASSWORD: practica123
+      POSTGRES_USER: alumno
+    image: postgres:alpine
+    networks:
+      monitoring: null
+    ports:
+    - published: 5432
+      target: 5432
+    restart: unless-stopped
+  prometheus:
+    command:
+    - --config.file=/etc/prometheus/prometheus.yml
+    container_name: prometheus-practica
+    depends_on:
+      nginx:
+        condition: service_started
+      redis:
+        condition: service_started
+    image: prom/prometheus:latest
+    networks:
+      monitoring: null
+    ports:
+    - published: 9090
+      target: 9090
+    restart: unless-stopped
+    volumes:
+    - /home/vagrant/practica-linux--Bardin-Gomez-Iozzia-/proyecto/contenedores/prometheus.yml:/etc/prometheus/prometheus.yml:rw
+  redis:
+    container_name: redis-practica
+    image: redis:alpine
+    networks:
+      monitoring: null
+    ports:
+    - published: 6379
+      target: 6379
+    restart: unless-stopped
+version: '3.8'
+volumes:
+  grafana-data: {}
+
