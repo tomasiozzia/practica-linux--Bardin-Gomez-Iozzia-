@@ -16,9 +16,9 @@ Integrantes: Bardin – Gómez – Iozzia
 - Docker y Docker Compose instalados dentro de la VM  
 
 ## Cómo levantar la VM
-   ```vagrant up ```
-   ```vagrant ssh ```
-   ```cd ~/practica-linux--Bardin-Gomez-Iozzia-/proyecto ```
+   `vagrant up `
+   `vagrant ssh `
+   `cd ~/practica-linux--Bardin-Gomez-Iozzia-/proyecto `
 
 ## Estructura del proyecto
 
@@ -53,7 +53,7 @@ Integrantes: Bardin – Gómez – Iozzia
   - `verificacion_lamp.txt`  
   - `capturas/`: `index_html.png`, `info_php.png`, `test_db_php.png`  
 
-## Cómo levantar los contenedores
+## 🐋 Cómo levantar los contenedores
  ```cd contenedores ```
  ```docker-compose up -d ```
  ```docker ps ```
